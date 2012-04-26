@@ -8,20 +8,22 @@
 
 #import "ViewController.h"
 
-@implementation ViewController
-
 #define degreesToRadians(x) (M_PI * x / 180.0)
+
+@implementation ViewController
 
 - (void)viewDidLoad
 {
+
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-	
+
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	[button addTarget:self action:@selector(targetMethod:) forControlEvents:UIControlEventTouchDown];
 	[button setTitle:@"Tap" forState:UIControlStateNormal];
 	button.frame = CGRectMake(0.0, 0.0, 160.0, 40.0);
 	[self.view addSubview:button];
+
+	button.center = self.view.center;
 	
 }
 
@@ -34,6 +36,7 @@
 	 ];
 	
 }
+
 
 - (void)didReceiveMemoryWarning
 {
