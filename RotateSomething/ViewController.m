@@ -2,9 +2,6 @@
 //  ViewController.m
 //  RotateSomething
 //
-//  Created by James Border on 4/25/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
 
 #import "ViewController.h"
 
@@ -12,8 +9,7 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
 
     [super viewDidLoad];
 
@@ -29,14 +25,14 @@
 
 -(IBAction)targetMethod:(UIButton*)sender {
 	
-	[UIView animateWithDuration:0.25 delay:0.0 options:UIViewAnimationCurveEaseOut
+	[UIView animateWithDuration:0.25 delay:0.0 
+						options:UIViewAnimationCurveEaseOut
 					 animations:^{
 						 sender.transform = CGAffineTransformRotate(sender.transform, degreesToRadians(90));
 					 }	completion:nil
 	 ];
 	
 }
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -75,8 +71,10 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
+
     // Return YES for supported orientations
-	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+	return (interfaceOrientation == UIInterfaceOrientationPortrait);
+
 }
 
 @end

@@ -274,6 +274,7 @@
 				8C5178EF1548E037001C303A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
