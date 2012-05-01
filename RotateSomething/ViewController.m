@@ -20,10 +20,10 @@
 	[self.view addSubview:button];
 
 	button.center = self.view.center;
-	
+
 }
 
--(IBAction)targetMethod:(UIButton*)sender {
+-(void)targetMethod:(UIView*)sender {
 	
 	[UIView animateWithDuration:0.25 delay:0.0 
 						options:UIViewAnimationCurveEaseOut

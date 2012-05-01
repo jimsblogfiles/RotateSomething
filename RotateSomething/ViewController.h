@@ -7,5 +7,6 @@
 
 @interface ViewController : UIViewController 
 
+-(void)targetMethod:(UIButton*)sender;
 
 @end
